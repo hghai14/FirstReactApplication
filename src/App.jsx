@@ -5,9 +5,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 
 class App extends Component {
+    
     state = { 
         new_user : true
      }
+
     render() { 
         let comp;
         if (this.state.new_user) {
@@ -18,7 +20,7 @@ class App extends Component {
         }
         return (
             <div class="App">
-                <div class="container d-flex justify-content-center">
+                <div class="container">
                 <nav class = "nav nav-pills flex-sm-row">
                     <a href="#" name="signup" class="nav-link" onClick={this.changeView}>Sign Up</a>
                     <a href ="#"  name="signin" class="nav-link" onClick={this.changeView}>Sign In</a>

@@ -3,24 +3,26 @@ import { auth , db} from './global.js';
 import "bootstrap/dist/css/bootstrap.css";
 
 class SignIn extends Component {
+
     state = {
         email : '',
         password : ''
     }
+    
     render() { 
         return (
             <form action="get"class="form-horizontal" >
 
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="emailID"> Email </label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-4">
                     <input type="text" name='email' placeholder="Enter your Email ID" id="emailID" class="form-control" onChange={this.inputHandler}></input>
                     </div>
                 </div>
                 <br/>
                 <div class="form-group">
                     <label class="control-label col-sm-2" for="pass">Password</label>
-                    <div class="col-sm-10">
+                    <div class="col-sm-4">
                     <input type="password" placeholder="Enter password" name='password' class="form-control" onChange={this.inputHandler}></input>
                     </div>
                 </div>
